@@ -23,9 +23,9 @@ app.MapGet("/weatherforecast", () =>
     return Enumerable.Range(1, 5).Select(index =>
         new PrevisaoTempo
         {
-            Cidade = "Cidade",
+            Cidade = "Cidade Atualização AKS",
             Data = DateTime.Now,
-            TemperaturaC = 10,
+            TemperaturaC = 30,
             Resumo = "ObterResumo(temperaturaC)"
         }
         ).ToArray();
