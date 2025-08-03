@@ -29,11 +29,5 @@ namespace fiap_sub_fase_5_api.Controllers
             })
             .ToArray();
         }
-
-        [HttpGet(Name = "GetMeuNome")]
-        public IEnumerable<string> GetMeuNome()
-        {
-            return ["Felipe"];
-        }
     }
 }
