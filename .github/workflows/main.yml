@@ -23,13 +23,13 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Listar Diretório
-        run: ls
+        run: ls | cd fiap-sub-fase-5-api | ls
 
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
         with:
           context: .                    
-          file: ./FiapDocker/Dockerfile  
+          file: ./fiap-sub-fase-5-api/Dockerfile  
           push: true
 
           tags: |
