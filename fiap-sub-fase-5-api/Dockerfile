@@ -28,7 +28,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 EXPOSE 72
 
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 COPY ["fiap-sub-fase-5-api/fiap-sub-fase-5-api.csproj", "fiap-sub-fase-5-api/"]
 RUN dotnet restore "fiap-sub-fase-5-api/fiap-sub-fase-5-api.csproj"
