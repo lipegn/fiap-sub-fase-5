@@ -8,6 +8,12 @@ namespace fiap_sub_fase_5_api.Controllers
     {
         private static readonly string[] CidadesBrasileiras = { "São Paulo", "Rio de Janeiro", "Brasília", "Salvador", "Belo Horizonte" };
 
+        [HttpGet]
+        public IEnumerable<String> Cidades()
+        {
+            return CidadesBrasileiras;
+        }
+
         [HttpGet("condicoes-atuais")]
         public IEnumerable<PrevisaoTempo> ObterPrevisoesTempo()
         {
