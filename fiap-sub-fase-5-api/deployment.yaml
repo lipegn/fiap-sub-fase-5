@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: fiapapipoddeployment
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: fiapapipod
