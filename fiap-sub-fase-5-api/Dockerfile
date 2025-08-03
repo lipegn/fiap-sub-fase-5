@@ -30,14 +30,14 @@ EXPOSE 72
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["fiap-sub-fase-5-api/FiapDocker.csproj", "fiap-sub-fase-5-api/"]
+COPY ["fiap-sub-fase-5-api/fiap-sub-fase-5-api.csproj", "fiap-sub-fase-5-api/"]
 RUN dotnet restore "fiap-sub-fase-5-api/fiap-sub-fase-5-api.dll.csproj"
 COPY . .
 WORKDIR "/src/fiap-sub-fase-5-api"
-RUN dotnet build "fiap-sub-fase-5-api.dll.csproj" -c Release -o /app/build
+RUN dotnet build "fiap-sub-fase-5-api.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "fiap-sub-fase-5-api.dll.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "fiap-sub-fase-5-api.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
