@@ -7,7 +7,7 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["fiap-sub-fase-5-api.csproj", "."]
+COPY ["fiap-sub-fase-5-api/fiap-sub-fase-5-api.csproj", "."]
 RUN dotnet restore "./fiap-sub-fase-5-api.csproj"
 COPY . .
 WORKDIR "/src/."
