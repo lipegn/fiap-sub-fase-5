@@ -42,4 +42,4 @@ RUN dotnet publish "fiap-sub-fase-5-api.dll.csproj" -c Release -o /app/publish /
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "fiap-sub-fase-5-api.dll.dll"]
+ENTRYPOINT ["dotnet", "fiap-sub-fase-5-api.dll"]
