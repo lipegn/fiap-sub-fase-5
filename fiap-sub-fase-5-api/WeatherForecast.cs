@@ -1,13 +1,10 @@
 namespace fiap_sub_fase_5_api
 {
-    public class WeatherForecast
+    public class PrevisaoTempo
     {
-        public DateOnly Date { get; set; }
-
-        public int TemperatureC { get; set; }
-
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-
-        public string? Summary { get; set; }
+        public string Cidade { get; set; }
+        public DateTime Data { get; set; }
+        public int TemperaturaC { get; set; }
+        public string Resumo { get; set; }
     }
 }

@@ -6,28 +6,66 @@ namespace fiap_sub_fase_5_api.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
+        private static readonly string[] CidadesBrasileiras = { "São Paulo", "Rio de Janeiro", "Brasília", "Salvador", "Belo Horizonte" };
 
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        [HttpGet("condicoes-atuais")]
+        public IEnumerable<PrevisaoTempo> ObterPrevisoesTempo()
         {
-            _logger = logger;
+            var rng = new Random();
+            var previsoes = new List<PrevisaoTempo>();
+
+            foreach (var cidade in CidadesBrasileiras)
+            {
+                var temperaturaC = rng.Next(15, 35);
+                previsoes.Add(new PrevisaoTempo
+                {
+                    Cidade = cidade,
+                    Data = DateTime.Now,
+                    TemperaturaC = temperaturaC,
+                    Resumo = ObterResumo(temperaturaC)
+                });
+            }
+
+            return previsoes;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
+        [HttpGet("previsao-cinco-dias")]
+        public IEnumerable<PrevisaoTempo> ObterPrevisaoCincoDias()
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            var rng = new Random();
+            var previsoes = new List<PrevisaoTempo>();
+
+            foreach (var cidade in CidadesBrasileiras)
             {
-                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+                for (int i = 0; i < 5; i++)
+                {
+                    var temperaturaC = rng.Next(15, 35);
+                    previsoes.Add(new PrevisaoTempo
+                    {
+                        Cidade = cidade,
+                        Data = DateTime.Now.AddDays(i),
+                        TemperaturaC = temperaturaC,
+                        Resumo = ObterResumo(temperaturaC)
+                    });
+                }
+            }
+
+            return previsoes;
+        }
+
+        private static string ObterResumo(int temperaturaC)
+        {
+            return temperaturaC switch
+            {
+                var temp when temp < 0 => "Congelante",
+                var temp when temp < 5 => "Friozinho",
+                var temp when temp < 10 => "Frio",
+                var temp when temp < 15 => "Frio agradavel",
+                var temp when temp < 20 => "Agradável",
+                var temp when temp < 25 => "Moderado",
+                var temp when temp < 30 => "Calor",
+                _ => "Muito Calor",
+            };
         }
     }
 }
