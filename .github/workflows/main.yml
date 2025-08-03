@@ -22,11 +22,14 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
+      - name: Listar Diretório
+        run: ls
+
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
         with:
           context: .                    
-          file: ./app/FiapDocker/Dockerfile  
+          file: ./FiapDocker/Dockerfile  
           push: true
 
           tags: |
