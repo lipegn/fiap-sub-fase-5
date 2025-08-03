@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: fiapapipod
-          image: lipegn/fiap-sub-fase-5:latest
+          image: joaoantoniomarques/fiapapidocker:latest
           ports:
             - containerPort: 80
 
