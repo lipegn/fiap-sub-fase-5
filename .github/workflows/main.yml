@@ -23,17 +23,11 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
         with:
-          context: .                       
-          file: ./Dockerfile        
-          push: true
-
-          tags: |
-            lipegn/fiap-sub-fase-5:latest
-            lipegn/fiap-sub-fase-5:${{ github.sha }}         
+          push: true      
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t lipegn/fiap-sub-fase-5:latest .
+          docker build -t lipegn/fiap-sub-fase-5:latest 
           docker push lipegn/fiap-sub-fase-5:latest
 
 
