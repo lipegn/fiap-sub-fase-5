@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Listar Diretório
-        run: ls | cd fiap-sub-fase-5-api | ls
+        run: ls
 
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
@@ -38,19 +38,13 @@ jobs:
       - name: Login to Docker Hub
         run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
 
-      - name: Build and Push Docker Image
-        run: |
-          docker build -t lipegn/fiap-sub-fase-5:latest 
-          docker push lipegn/fiap-sub-fase-5:latest
-
       - name: Set up kubectl
         uses: azure/k8s-set-context@v1
         with:
           method: kubeconfig
-          kubeconfig: ${{ secrets.KUBE_CONFIG_NEW }}
+          kubeconfig: ${{ secrets.KUBE_CONFIG }}
           version: 1.21.0
-
 
       - name: Deploy to AKS
         run: |
-          kubectl apply -f deployment.yaml
+          kubectl apply -f ./fiap-sub-fase-5-api/deployment.yaml

@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\fiap-sub-fase-5\\fiap-sub-fase-5-api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{43DFA279-0694-4E82-B815-DF66BB107AA6}|fiap-sub-fase-5-api.csproj|c:\\fiap-sub-fase-5\\fiap-sub-fase-5-api\\deployment.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{43DFA279-0694-4E82-B815-DF66BB107AA6}|fiap-sub-fase-5-api.csproj|solutionrelative:deployment.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{43DFA279-0694-4E82-B815-DF66BB107AA6}|fiap-sub-fase-5-api.csproj|c:\\fiap-sub-fase-5\\fiap-sub-fase-5-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43DFA279-0694-4E82-B815-DF66BB107AA6}|fiap-sub-fase-5-api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43DFA279-0694-4E82-B815-DF66BB107AA6}|fiap-sub-fase-5-api.csproj|c:\\fiap-sub-fase-5\\fiap-sub-fase-5-api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43DFA279-0694-4E82-B815-DF66BB107AA6}|fiap-sub-fase-5-api.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43DFA279-0694-4E82-B815-DF66BB107AA6}|fiap-sub-fase-5-api.csproj|c:\\fiap-sub-fase-5\\fiap-sub-fase-5-api\\kubernetes\\cidcdfiap.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{43DFA279-0694-4E82-B815-DF66BB107AA6}|fiap-sub-fase-5-api.csproj|solutionrelative:kubernetes\\cidcdfiap.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43DFA279-0694-4E82-B815-DF66BB107AA6}|fiap-sub-fase-5-api.csproj|c:\\fiap-sub-fase-5\\fiap-sub-fase-5-api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{43DFA279-0694-4E82-B815-DF66BB107AA6}|fiap-sub-fase-5-api.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{43DFA279-0694-4E82-B815-DF66BB107AA6}|fiap-sub-fase-5-api.csproj|c:\\fiap-sub-fase-5\\fiap-sub-fase-5-api\\deployment.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{43DFA279-0694-4E82-B815-DF66BB107AA6}|fiap-sub-fase-5-api.csproj|solutionrelative:deployment.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43DFA279-0694-4E82-B815-DF66BB107AA6}|fiap-sub-fase-5-api.csproj|c:\\fiap-sub-fase-5\\fiap-sub-fase-5-api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43DFA279-0694-4E82-B815-DF66BB107AA6}|fiap-sub-fase-5-api.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43DFA279-0694-4E82-B815-DF66BB107AA6}|fiap-sub-fase-5-api.csproj|c:\\fiap-sub-fase-5\\fiap-sub-fase-5-api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{43DFA279-0694-4E82-B815-DF66BB107AA6}|fiap-sub-fase-5-api.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,36 +30,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\fiap-sub-fase-5\\fiap-sub-fase-5-api\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\fiap-sub-fase-5\\fiap-sub-fase-5-api\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T11:11:28.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "deployment.yaml",
               "DocumentMoniker": "C:\\fiap-sub-fase-5\\fiap-sub-fase-5-api\\deployment.yaml",
               "RelativeDocumentMoniker": "deployment.yaml",
               "ToolTip": "C:\\fiap-sub-fase-5\\fiap-sub-fase-5-api\\deployment.yaml",
               "RelativeToolTip": "deployment.yaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-08-03T10:48:29.258Z",
+              "WhenOpened": "2025-08-03T10:57:35.666Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\fiap-sub-fase-5\\fiap-sub-fase-5-api\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -68,26 +73,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "cidcdfiap.yaml",
               "DocumentMoniker": "C:\\fiap-sub-fase-5\\fiap-sub-fase-5-api\\kubernetes\\cidcdfiap.yaml",
               "RelativeDocumentMoniker": "kubernetes\\cidcdfiap.yaml",
               "ToolTip": "C:\\fiap-sub-fase-5\\fiap-sub-fase-5-api\\kubernetes\\cidcdfiap.yaml",
               "RelativeToolTip": "kubernetes\\cidcdfiap.yaml",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAwCwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
               "WhenOpened": "2025-08-03T10:12:40.274Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\fiap-sub-fase-5\\fiap-sub-fase-5-api\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
               "ToolTip": "C:\\fiap-sub-fase-5\\fiap-sub-fase-5-api\\Controllers\\WeatherForecastController.cs",
               "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAowB4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAzwBQAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-03T10:04:10.233Z",
               "EditorCaption": ""
