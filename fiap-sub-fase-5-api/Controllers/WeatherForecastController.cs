@@ -4,7 +4,7 @@ namespace fiap_sub_fase_5_api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class PrevisaoTempoController : ControllerBase
     {
         private static readonly string[] CidadesBrasileiras = { "São Paulo", "Rio de Janeiro", "Brasília", "Salvador", "Belo Horizonte" };
 
