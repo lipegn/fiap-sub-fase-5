@@ -31,14 +31,14 @@ app.MapGet("/weatherforecast", () =>
         ).ToArray();
 });
 
-app.MapGet("/weatherforecast2", () =>
+app.MapGet("/weatherforecast3", () =>
 {
     var summaries = new[] { "Freezing","Bracing","Chilly","Cool","Mild",
                             "Warm","Balmy","Hot","Sweltering","Scorching" };
     return Enumerable.Range(1, 5).Select(index =>
         new PrevisaoTempo
         {
-            Cidade = "Cidade Atualização AKS",
+            Cidade = "Cidade Atualização AKS novo",
             Data = DateTime.Now,
             TemperaturaC = 30,
             Resumo = "ObterResumo(temperaturaC)"
