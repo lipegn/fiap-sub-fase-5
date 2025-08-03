@@ -23,6 +23,8 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
         with:
+          context: .                         # ajuste se seu contexto for outro diretório
+          file: ./Dockerfile  
           push: true
 
           tags: |
