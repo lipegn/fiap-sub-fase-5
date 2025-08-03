@@ -31,7 +31,7 @@ EXPOSE 72
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY ["fiap-sub-fase-5-api/fiap-sub-fase-5-api.csproj", "fiap-sub-fase-5-api/"]
-RUN dotnet restore "fiap-sub-fase-5-api/fiap-sub-fase-5-api.dll.csproj"
+RUN dotnet restore "fiap-sub-fase-5-api/fiap-sub-fase-5-api.csproj"
 COPY . .
 WORKDIR "/src/fiap-sub-fase-5-api"
 RUN dotnet build "fiap-sub-fase-5-api.csproj" -c Release -o /app/build
