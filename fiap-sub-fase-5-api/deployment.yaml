@@ -16,8 +16,10 @@ spec:
         - name: fiapapipod
           image: lipegn/fiap-sub-fase-5:latest
           ports:
-            - containerPort: 80
-
+            - containerPort: 8080
+          env:
+            - name: ASPNETCORE_URLS
+              value: http://+:8080 
 ---
 
 apiVersion: v1
@@ -28,7 +30,6 @@ spec:
   selector:
     app: fiapapipod
   ports:
-    - protocol: TCP
       port: 80
-      targetPort: 80
+      targetPort: 8080
   type: LoadBalancer
